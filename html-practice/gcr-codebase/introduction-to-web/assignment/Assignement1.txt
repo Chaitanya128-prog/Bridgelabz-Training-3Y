@@ -1,0 +1,129 @@
+ASSIGNMENT 1
+1. Explain the difference between frontend, backend, and full-stack development with suitable real-world examples.
+
+Frontend Development:
+Frontend is the part of a website that users can see and interact with. It is created using HTML, CSS, and JavaScript.
+
+Example: The login page of Instagram or Facebook.
+
+Backend Development:
+Backend is the server-side part that manages data, authentication, and business logic. It is developed using languages like Java, Python, PHP, or Node.js.
+
+Example: Checking the username and password when a user logs in.
+
+Full-Stack Development:
+A Full-Stack Developer works on both frontend and backend.
+
+Example: Building a complete online shopping website from user interface to database.
+
+2. Create a simple diagram showing how the client-server model works in web architecture.
++---------+        Request        +------------+
+| Browser | --------------------> | Web Server |
+| (Client)|                       |            |
++---------+ <-------------------- +------------+
+             Response (HTML/CSS/JS)
+3. Describe how a browser requests and displays a web page from a web server.
+The user enters a website URL.
+The browser sends an HTTP request to the web server.
+The server processes the request.
+The server sends HTML, CSS, and JavaScript files.
+The browser renders the webpage and displays it to the user.
+4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+Tool	Purpose
+VS Code	Code editor
+Google Chrome	Test and view websites
+Live Server Extension	Run websites locally
+Git	Version control
+GitHub	Store and manage projects online
+5. Explain what a web server is and give examples of commonly used servers.
+
+A web server is software that receives requests from browsers and sends web pages to users.
+
+Examples:
+
+Apache
+Nginx
+Microsoft IIS
+Node.js Server
+6. Define the roles of a frontend developer, backend developer, and database administrator in a project.
+
+Frontend Developer
+
+Creates the user interface.
+Works with HTML, CSS, and JavaScript.
+
+Backend Developer
+
+Builds server-side logic.
+Connects the application with the database.
+
+Database Administrator (DBA)
+
+Manages databases.
+Maintains security and data backup.
+7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a screenshot of the setup.
+
+Installed Software
+
+Visual Studio Code
+Live Server Extension
+Google Chrome
+
+Screenshot: (Attach the screenshot of your VS Code setup here.)
+
+8. Explain the difference between static and dynamic websites. Provide an example of each.
+Static Website	Dynamic Website
+Fixed content	Content changes based on user or database
+Uses HTML and CSS	Uses backend and database
+Faster	More interactive
+
+Static Website Example: Portfolio Website
+
+Dynamic Website Example: Amazon, Facebook
+
+9. Research and list five web browsers. Explain how rendering engines differ between them.
+Browser	Rendering Engine
+Google Chrome	Blink
+Microsoft Edge	Blink
+Mozilla Firefox	Gecko
+Safari	WebKit
+Opera	Blink
+
+Different rendering engines display web pages differently, but they all follow web standards.
+
+10. Draw a labeled diagram showing the basic web architecture flow — client, server, database, and APIs.
++---------+
+| Client  |
+| Browser |
++---------+
+     |
+     | HTTP Request
+     v
++--------------+
+| Web Server   |
++--------------+
+     |
+     | API Calls
+     v
++--------------+
+| Application  |
+| Logic / APIs |
++--------------+
+     |
+     | Query
+     v
++--------------+
+| Database     |
++--------------+
+     |
+     | Response
+     v
++--------------+
+| Web Server   |
++--------------+
+     |
+     v
++---------+
+| Client  |
+| Browser |
++---------+
