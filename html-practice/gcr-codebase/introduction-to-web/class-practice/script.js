@@ -1,3 +1,3 @@
 document.getElementById("clickBtn").addEventListener("click", function() {
-alert("Button clicked!");
+alert("Apne Kaam se Kaam Rakh");
 });
