@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5: Advanced Selectors</title>
+    <link rel="stylesheet" href="q5_style.css">
+</head>
+<body>
+
+    <main class="content">
+        <h2>Advanced Selectors Demonstration</h2>
+        
+        <!-- Form elements demonstrating Attribute Selectors -->
+        <div class="form-group">
+            <input type="text" placeholder="Type text here (Attribute Selector Target)">
+            <input type="number" placeholder="Number input (Not targeted)">
+        </div>
+
+        <!-- Links demonstrating Attribute Prefix Selectors -->
+        <div class="link-group">
+            <a href="https://example.com">External Secure Link (https)</a>
+            <a href="http://example.com">Insecure Link (http)</a>
+        </div>
+
+        <!-- Structural List for Combinators & Pseudo-classes -->
+        <ul class="item-list">
+            <li class="item">List Item 1</li>
+            <li class="item">List Item 2 (Special)</li>
+            <li class="item">List Item 3</li>
+            <li class="item">List Item 4</li>
+            <li class="item">List Item 5</li>
+        </ul>
+
+        <!-- Sibling Combinator Targets -->
+        <h4 class="sibling-head">Heading for Sibling Test</h4>
+        <p class="direct-sibling">Direct Sibling Paragraph (+)</p>
+        <p class="general-sibling">General Sibling Paragraph (~)</p>
+        <p class="general-sibling">Another General Sibling Paragraph (~)</p>
+    </main>
+
+</body>
+</html>

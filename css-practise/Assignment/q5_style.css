@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #fafafa;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* 1. ATTRIBUTE SELECTORS */
+/* Targets <input> elements with specific type attribute */
+input[type="text"] {
+    border: 2px solid #3498db;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+/* Targets <a> elements whose href attribute starts with "https" */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* 2. PSEUDO-CLASSES */
+/* :hover and :focus state */
+input[type="text"]:focus {
+    background-color: #e8f8f5;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* :nth-child() pseudo-class - styles alternating list items */
+.item-list li:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.item-list li:nth-child(odd) {
+    background-color: #e6f7ff;
+}
+
+/* 3. PSEUDO-ELEMENTS */
+/* ::before inserts visual icon before secure links */
+a[href^="https"]::before {
+    content: "🔒 ";
+}
+
+/* ::after appends indicator text after second item */
+.item-list li:nth-child(2)::after {
+    content: " ★ (Featured)";
+    color: #e67e22;
+}
+
+/* 4. COMBINATORS */
+/* Direct Child Combinator (>) */
+ul.item-list > li {
+    padding: 10px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+/* Adjacent Sibling Combinator (+) - selects immediately following sibling */
+.sibling-head + p {
+    color: #d35400;
+    font-weight: bold;
+}
+
+/* General Sibling Combinator (~) - selects all following siblings */
+.sibling-head ~ p.general-sibling {
+    font-style: italic;
+    background-color: #f9ebea;
+    padding: 4px;
+}

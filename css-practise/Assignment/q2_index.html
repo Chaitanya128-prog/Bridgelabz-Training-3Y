@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2: Height and Width Practice</title>
+    <link rel="stylesheet" href="q2_style.css">
+</head>
+<body>
+
+    <main class="viewport-wrapper">
+        <!-- Box 1: Using px and em units -->
+        <section class="box box-one">
+            <h2>Box 1 (Fixed)</h2>
+            <p>Width: 250px | Height: 12em</p>
+        </section>
+
+        <!-- Box 2: Using percentage, max-width, and overflow -->
+        <section class="box box-two">
+            <h2>Box 2 (Responsive & Max-Width)</h2>
+            <p>Width: 80% (Max-Width: 450px) | Min-Height: 200px</p>
+            <p class="long-text">
+                This text is extra long to demonstrate the CSS overflow property. When text exceeds the maximum height boundary set on this container, it becomes scrollable automatically.
+            </p>
+        </section>
+
+        <!-- Box 3: Using viewport height (vh) -->
+        <section class="box box-three">
+            <h2>Box 3 (Viewport Sized)</h2>
+            <p>Width: 200px | Height: 30vh</p>
+        </section>
+    </main>
+
+</body>
+</html>

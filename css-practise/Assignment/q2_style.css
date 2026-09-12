@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper to center boxes vertically and horizontally */
+.viewport-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    min-height: 100vh;
+    background-color: #ecf0f1;
+    font-family: Segoe UI, sans-serif;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Shared styling */
+.box {
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Box 1: Pixel and Em units */
+.box-one {
+    width: 250px;
+    height: 12em;
+    background-color: #34495e;
+}
+
+/* Box 2: Percentage, max-width, min-height, overflow */
+.box-two {
+    width: 80%;
+    max-width: 450px;
+    min-height: 200px;
+    max-height: 220px;
+    overflow: auto; /* Adds scrollbar when content overflows */
+    background-color: #16a085;
+}
+
+.long-text {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* Box 3: Viewport Height unit */
+.box-three {
+    width: 200px;
+    height: 30vh;
+    background-color: #d35400;
+}

@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Fixed positioning for Header and Footer */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 12px;
+    text-align: center;
+    z-index: 1000;
+}
+
+main {
+    padding-top: 60px;   /* Space for fixed header */
+    padding-bottom: 50px; /* Space for fixed footer */
+}
+
+.section {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Section 1: Linear Gradient with Fixed Background (Parallax Effect) */
+.linear-sec {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #6a11cb);
+    background-attachment: fixed; /* Creates parallax effect */
+}
+
+/* Section 2: Radial Gradient */
+.radial-sec {
+    background: radial-gradient(circle at center, #3a7bd5, #3a6073, #0a192f);
+}
+
+/* Card content layout inside sections */
+.card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+}

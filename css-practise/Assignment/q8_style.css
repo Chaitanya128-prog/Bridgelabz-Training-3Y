@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f3f6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: #fff;
+}
+
+/* Center all content using Flexbox */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 40px;
+}
+
+.layer-tag {
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Layer Visualizations */
+.margin-layer {
+    background-color: #fbeee6; /* Margin color representation */
+    outline: 2px dashed #e67e22;
+    padding: 25px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.border-layer {
+    background-color: #fef9e7; /* Border container visual */
+    border: 5px solid #f1c40f;
+    padding: 25px;
+}
+
+.padding-layer {
+    background-color: #e8f8f5; /* Padding visual */
+    outline: 2px dashed #2ecc71;
+    padding: 25px;
+}
+
+.content-layer {
+    background-color: #aed6f1; /* Content core visual */
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Box-Sizing Comparison Styling */
+.comparison-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-demo {
+    width: 200px;
+    padding: 20px;
+    border: 10px solid #34495e;
+    background-color: #9b59b6;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+/* Standard default box model */
+.content-box-demo {
+    box-sizing: content-box;
+}
+
+/* Modern border-box model */
+.border-box-demo {
+    box-sizing: border-box;
+}

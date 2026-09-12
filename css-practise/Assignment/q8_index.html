@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8: Box Model Exploration</title>
+    <link rel="stylesheet" href="q8_style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Box Model Visualizer</h1>
+    </header>
+
+    <main class="page-wrapper">
+        
+        <!-- Interactive Layer Visualizer -->
+        <section class="margin-layer">
+            <span class="layer-tag">Margin (Outer Space)</span>
+            
+            <div class="border-layer">
+                <span class="layer-tag">Border</span>
+                
+                <div class="padding-layer">
+                    <span class="layer-tag">Padding</span>
+                    
+                    <div class="content-layer">
+                        <span class="layer-tag">Content</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Box-Sizing Comparison Section -->
+        <section class="comparison-section">
+            <div class="box-demo content-box-demo">
+                <h3>content-box</h3>
+                <p>Width: 200px + Padding (20px) + Border (10px) = <strong>Total 260px width</strong></p>
+            </div>
+
+            <div class="box-demo border-box-demo">
+                <h3>border-box</h3>
+                <p>Width: 200px (Padding and Border included) = <strong>Total 200px width</strong></p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

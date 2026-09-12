@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f6f8;
+}
+
+.navbar-header {
+    background-color: #1a252f;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Horizontal alignment setup */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar Link styles */
+.nav-link {
+    display: inline-block;
+    padding: 18px 25px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    border-bottom: 3px solid transparent;
+    /* Required smooth hover transition */
+    transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.nav-link:hover {
+    background-color: #2c3e50;
+    color: #3498db;
+    border-bottom: 3px solid #3498db;
+}
+
+/* Distinct styling for active link */
+.nav-link.active {
+    background-color: #3498db;
+    color: #ffffff;
+    border-bottom: 3px solid #1d6fa5;
+    font-weight: bold;
+}
+
+.page-content {
+    flex: 1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #1a252f;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive breakpoint: Stacks vertically under 700px */
+@media screen and (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #2c3e50;
+    }
+}

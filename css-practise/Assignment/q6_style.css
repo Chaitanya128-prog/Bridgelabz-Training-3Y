@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Flexbox horizontal layout */
+.transform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Base box styling with transition requirement */
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    /* Required smooth transition */
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.label {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+/* Hover Transformations */
+.rotate-box:hover {
+    transform: rotate(45deg);
+    background-color: #e74c3c;
+}
+
+.scale-box:hover {
+    transform: scale(1.2);
+    background-color: #2ecc71;
+}
+
+.translate-box:hover {
+    transform: translateY(-20px);
+    background-color: #f1c40f;
+    color: #000;
+}
+
+.skew-box:hover {
+    transform: skewX(-15deg);
+    background-color: #9b59b6;
+}
