@@ -1,0 +1,13 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background-color: #121212; color: white; min-height: 100vh; display: flex; flex-direction: column; }
+header, footer { background-color: #1f1f1f; text-align: center; padding: 1rem; }
+.animation-stage { display: flex; justify-content: center; align-items: center; gap: 3rem; flex: 1; flex-wrap: wrap; }
+.demo-card { text-align: center; }
+.box { width: 60px; height: 60px; background-color: #ff4081; margin: 0 auto 10px; border-radius: 8px; }
+.mover { animation: slideSide 2s ease-in-out infinite alternate; }
+@keyframes slideSide { 0% { transform: translateX(-30px); } 100% { transform: translateX(30px); } }
+.ball { width: 60px; height: 60px; background-color: #00e676; border-radius: 50%; margin: 0 auto 10px; }
+.bouncer { animation: bounce 1.2s ease-in-out 0.3s infinite alternate; }
+@keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-50px); } }
+.color-text { font-size: 1.8rem; margin-bottom: 10px; animation: colorShift 3s ease-in-out infinite alternate; }
+@keyframes colorShift { 0% { color: #3d5aff; text-shadow: 0 0 5px #3d5aff; } 50% { color: #ffeb3b; text-shadow: 0 0 10px #ffeb3b; } 100% { color: #00e5ff; text-shadow: 0 0 5px #00e5ff; } }

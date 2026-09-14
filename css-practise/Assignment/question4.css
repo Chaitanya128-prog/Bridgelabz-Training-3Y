@@ -1,0 +1,13 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Segoe UI, sans-serif; line-height: 1.6; background-color: #fafafa; }
+main { padding: 2rem; max-width: 800px; margin: 0 auto; }
+header { background-color: #4a148c; color: white; padding: 1.5rem; text-align: center; }
+p { color: #424242; margin: 0.5rem 0; }
+#unique-text { font-style: italic; font-weight: bold; color: #b71c1c; }
+.highlight { background-color: #fff59d; padding: 5px; border-left: 4px solid #fbc02d; }
+a[target="_blank"] { color: #0288d1; text-decoration: underline; font-weight: bold; }
+.parent p { background-color: #e0f7fa; padding: 5px; }
+.parent > p { border: 2px dashed #00838f; }
+.sibling-head + p { color: #e65100; font-weight: bold; }
+.sibling-head ~ p { background-color: #fff3e0; }
+footer { text-align: center; padding: 1rem; background-color: #eeeeee; margin-top: 2rem; }

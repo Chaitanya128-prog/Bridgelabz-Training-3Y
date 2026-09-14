@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 1 - CSS Pseudo-Classes</title>
+  <link rel="stylesheet" href="question1.css">
+</head>
+<body>
+  <header><h1>Demonstration of CSS Pseudo-Classes</h1></header>
+  <main class="flex-container">
+    <section class="card">
+      <h2>:hover</h2>
+      <a href="#" class="hover-link">Hover Over Me</a>
+      <p>Changes background and text color on mouse hover.</p>
+    </section>
+    <section class="card">
+      <h2>:focus</h2>
+      <input type="text" class="focus-input" placeholder="Click/Tab to Focus">
+      <p>Highlights border and applies outline when focused.</p>
+    </section>
+    <section class="card">
+      <h2>:active</h2>
+      <button class="active-btn">Click Me!</button>
+      <p>Triggers visual press effect when held down.</p>
+    </section>
+    <section class="card">
+      <h2>:nth-child()</h2>
+      <ul class="nth-list">
+        <li>Item 1 (Odd)</li>
+        <li>Item 2 (Even)</li>
+        <li>Item 3 (Odd)</li>
+        <li>Item 4 (Even)</li>
+      </ul>
+      <p>Applies alternating zebra stripe colors to list items.</p>
+    </section>
+  </main>
+  <footer><p>&copy; 2026 CSS Pseudo-Classes Practice</p></footer>
+</body>
+</html>

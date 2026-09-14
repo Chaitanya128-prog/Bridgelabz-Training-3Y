@@ -1,0 +1,11 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background-color: #edf2f7; min-height: 100vh; display: flex; flex-direction: column; }
+header, footer { background-color: #1a202c; color: white; text-align: center; padding: 1rem; }
+.grid-container { display: flex; justify-content: center; align-items: center; gap: 2rem; flex: 1; padding: 2rem; flex-wrap: wrap; }
+.card { background-color: white; padding: 2rem; border-radius: 10px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); transition: all 0.3s ease-in-out; }
+.interactive-btn { margin-top: 1rem; padding: 10px 15px; border: none; background-color: #3182ce; color: white; border-radius: 4px; cursor: pointer; transition: all 0.3s ease; }
+.effect-card-1:hover { transform: scale(1.05); box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); }
+.effect-card-2:hover { transform: rotate(2deg); background-color: #feebc8; }
+.effect-card-3:hover { transform: translateY(-8px); box-shadow: 0 10px 15px rgba(72, 187, 120, 0.4); }
+.interactive-btn:hover { background-color: #2b6cb0; transform: scale(1.05); }
+.interactive-btn:focus { outline: none; box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); }

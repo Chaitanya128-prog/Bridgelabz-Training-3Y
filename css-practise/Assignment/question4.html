@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 4 - CSS Selectors Practice</title>
+  <link rel="stylesheet" href="question4.css">
+</head>
+<body>
+  <header id="main-header"><h1>CSS Selectors Practice</h1></header>
+  <main>
+    <section class="content-block">
+      <h2>Selector Types Demonstration</h2>
+      <p>This is a standard element selector example paragraph.</p>
+      <p class="highlight">This paragraph uses a class selector.</p>
+      <p id="unique-text">This paragraph uses an ID selector.</p>
+      <a href="https://example.com" target="_blank">Target Blank Link (Attribute Selector)</a>
+    </section>
+    <section class="combinator-block">
+      <h2>Combinators Section</h2>
+      <div class="parent">
+        <p>Direct Child Paragraph (> combinator target)</p>
+        <div><p>Nested Descendant Paragraph (space combinator target)</p></div>
+      </div>
+      <h3 class="sibling-head">Sibling Heading</h3>
+      <p>Adjacent Sibling Paragraph (+ combinator target)</p>
+      <p>General Sibling Paragraph (~ combinator target)</p>
+    </section>
+  </main>
+  <footer><p>&copy; 2026 CSS Selectors Reference</p></footer>
+</body>
+</html>

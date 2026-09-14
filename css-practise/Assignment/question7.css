@@ -1,0 +1,14 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; }
+.wrapper { padding: 1rem; width: 100%; max-width: 450px; }
+.ui-card { background-color: #ffffff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; gap: 1.5rem; }
+.ui-card h2 { color: #333; text-align: center; }
+.form-group { width: 100%; }
+.search-bar, .dropdown { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 6px; font-size: 1rem; transition: all 0.3s ease; }
+.search-bar:focus, .dropdown:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3); }
+.button-group { display: flex; gap: 1rem; }
+.btn { flex: 1; padding: 12px; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; }
+.btn-submit { background-color: #667eea; color: white; }
+.btn-submit:hover { background-color: #5a67d8; }
+.btn-cancel { background-color: #e2e8f0; color: #4a5568; }
+.btn-cancel:hover { background-color: #cbd5e0; }

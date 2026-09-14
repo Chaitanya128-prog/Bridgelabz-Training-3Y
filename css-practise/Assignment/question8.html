@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 8 - Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="question8.css">
+</head>
+<body>
+  <header><h1>CSS Box-Sizing Comparison</h1></header>
+  <main>
+    <div class="comparison-container">
+      <div class="box content-box">
+        <h2>content-box</h2>
+        <p>Width: 250px | Padding: 30px | Border: 10px</p>
+        <p><strong>Total Width = 330px</strong></p>
+      </div>
+      <div class="box border-box">
+        <h2>border-box</h2>
+        <p>Width: 250px | Padding: 30px | Border: 10px</p>
+        <p><strong>Total Width = 250px</strong></p>
+      </div>
+    </div>
+    <article class="explanation">
+      <h3>Explanation</h3>
+      <p><code>content-box</code> adds padding and border outside the width. <code>border-box</code> includes padding and border inside the defined width.</p>
+    </article>
+  </main>
+  <footer><p>&copy; 2026 Box-Sizing Tutorial</p></footer>
+</body>
+</html>
