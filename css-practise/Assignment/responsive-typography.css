@@ -1,0 +1,7 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #eef2f5; color: #2b2b2b; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 1rem; }
+.wrapper { width: 100%; max-width: 800px; }
+.content-box { background-color: #ffffff; text-align: center; padding: 3rem 2rem; margin: 2rem auto; border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+h1 { font-size: clamp(1.5rem, 4vw, 3rem); margin-bottom: 1.5rem; color: #1a202c; line-height: 1.2; }
+p { font-size: clamp(1rem, 2vw, 1.5rem); line-height: 1.7; color: #4a5568; max-width: 650px; margin: 0 auto; }
+@media (max-width: 700px) { .content-box { padding: 2rem 1.25rem; margin: 1rem auto; } p { line-height: 1.5; letter-spacing: 0.2px; } }

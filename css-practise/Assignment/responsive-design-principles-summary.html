@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles Summary</title>
+    <link rel="stylesheet" href="responsive-design-principles-summary.css">
+</head>
+<body>
+    <header><h1>Core Responsive Design Principles</h1></header>
+    <main class="container">
+        <section class="principles-grid">
+            <article class="principle-card">
+                <h2>Fluid Layouts</h2>
+                <p>Layouts that resize proportionally using percentage-based widths or CSS Grid and Flexbox.</p>
+                <pre><code>.container { width: 100%; max-width: 1200px; }</code></pre>
+            </article>
+            <article class="principle-card">
+                <h2>Flexible Media</h2>
+                <p>Media assets that scale within their containing elements to prevent clipping or overflow.</p>
+                <pre><code>img { max-width: 100%; height: auto; }</code></pre>
+            </article>
+            <article class="principle-card">
+                <h2>Breakpoints</h2>
+                <p>Media query boundaries applied to adjust styles based on device viewport widths.</p>
+                <pre><code>@media (max-width: 600px) { ... }</code></pre>
+            </article>
+        </section>
+    </main>
+    <footer><p>&copy; 2026 Web Design Education</p></footer>
+</body>
+</html>

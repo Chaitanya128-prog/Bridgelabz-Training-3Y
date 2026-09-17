@@ -1,0 +1,14 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background-color: #f8fafc; color: #1e293b; display: flex; flex-direction: column; min-height: 100vh; }
+header { background-color: #0284c7; color: #ffffff; text-align: center; padding: 1.5rem; }
+.container { flex: 1; max-width: 1100px; margin: 0 auto; padding: 3rem 1rem; width: 100%; }
+.principles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.principle-card { background-color: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); transition: all 0.4s ease; }
+.principle-card h2 { font-size: 1.3rem; margin-bottom: 0.75rem; color: #0369a1; transition: color 0.3s ease; }
+.principle-card p { font-size: 0.95rem; line-height: 1.5; margin-bottom: 1rem; }
+pre { background-color: #f1f5f9; padding: 0.75rem; border-radius: 4px; font-size: 0.85rem; overflow-x: auto; }
+.principle-card:hover { background: linear-gradient(135deg, #0284c7, #0369a1); color: #ffffff; }
+.principle-card:hover h2 { color: #ffffff; }
+.principle-card:hover pre { background-color: rgba(255, 255, 255, 0.2); color: #ffffff; }
+footer { background-color: #0284c7; color: #ffffff; text-align: center; padding: 1rem; margin-top: auto; }
+@media (max-width: 600px) { .principles-grid { grid-template-columns: 1fr; } }
