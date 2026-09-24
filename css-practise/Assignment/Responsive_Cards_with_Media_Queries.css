@@ -1,0 +1,35 @@
+/* General Setup */
+body { font-family: sans-serif; background-color: #eaeaea; padding: 40px 20px; margin: 0; }
+
+/* Flexbox Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    /* Desktop layout: 4 columns */
+    width: calc(25% - 15px); 
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card:hover { background-color: #007bff; color: white; }
+
+/* Tablet (max-width 900px): 2 columns */
+@media (max-width: 900px) {
+    .card { width: calc(50% - 10px); }
+}
+
+/* Mobile (max-width 600px): 1 column */
+@media (max-width: 600px) {
+    .card { width: 100%; }
+}

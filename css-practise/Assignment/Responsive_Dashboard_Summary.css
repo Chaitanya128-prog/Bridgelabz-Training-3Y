@@ -1,0 +1,53 @@
+/* Layout Setup */
+body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; }
+
+/* Keyframe Animation */
+@keyframes slideDownFade {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* CSS Grid Dashboard Layout */
+.dashboard-layout {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar main";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 70px 1fr;
+    min-height: 100vh;
+    animation: slideDownFade 0.8s ease forwards;
+}
+
+/* Areas */
+.dash-header { grid-area: header; background: #1a1a2e; color: white; padding: 0 20px; display: flex; align-items: center; }
+.dash-sidebar { grid-area: sidebar; background: #16213e; padding: 20px; }
+.dash-sidebar nav a { display: block; color: #a9a9a9; text-decoration: none; padding: 10px 0; border-bottom: 1px solid #333; }
+.dash-main { grid-area: main; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; align-content: start; }
+
+/* Dashboard Cards & Hover Effect */
+.dash-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dash-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive: Shift Sidebar to top, Main Content stacks below */
+@media (max-width: 750px) {
+    .dashboard-layout {
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            "main";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+    }
+    .dash-sidebar nav { display: flex; justify-content: space-around; }
+    .dash-sidebar nav a { border-bottom: none; }
+}

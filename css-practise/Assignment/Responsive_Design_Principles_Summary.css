@@ -1,0 +1,31 @@
+/* Layout */
+body { font-family: sans-serif; text-align: center; padding: 40px; margin: 0; background: #fdfdfd; }
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Styling & Hover */
+.principle-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: background 0.4s ease, color 0.4s ease;
+}
+.principle-box code { display: block; margin-top: 15px; background: #eee; padding: 5px; color: #333; transition: background 0.4s ease; }
+
+.principle-box:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+.principle-box:hover code { background: rgba(255,255,255,0.2); color: white; }
+
+/* Responsive */
+@media (max-width: 600px) {
+    .principles-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,24 @@
+/* Layout */
+body { font-family: sans-serif; text-align: center; background: #222; color: #fff; padding: 20px; margin: 0; }
+header { margin-bottom: 30px; }
+
+.comparison-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+figure { margin: 0; flex: 1; background: #333; padding: 10px; border-radius: 8px; }
+img { width: 100%; height: auto; border-radius: 4px; display: block; transition: filter 0.5s ease; }
+figcaption { padding-top: 10px; font-weight: bold; }
+
+/* Filter & Hover */
+.filtered-img { filter: contrast(150%) brightness(120%) sepia(30%); }
+.filtered-img:hover { filter: none; }
+
+/* Responsive */
+@media (max-width: 700px) {
+    .comparison-container { flex-direction: column; }
+}
