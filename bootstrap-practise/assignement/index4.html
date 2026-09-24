@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style4.css" rel="stylesheet">
+</head>
+<body>
+    <main class="container py-5">
+        <header class="text-center menu-header">
+            <h1 class="fw-bold">Today's Menu</h1>
+            <p class="lead text-muted">Fresh ingredients, prepared daily by our master chefs.</p>
+        </header>
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <h3 class="border-bottom pb-2 mb-3">Mains & Starters</h3>
+                <table class="table table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr><th>Item</th><th>Category</th><th class="text-end">Price</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Truffle Fries</td><td>Starter</td><td class="text-end">$8.00</td></tr>
+                        <tr><td>Grilled Salmon</td><td>Main</td><td class="text-end">$24.00</td></tr>
+                        <tr><td>Wagyu Burger</td><td>Main</td><td class="text-end">$18.00</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4">
+                <h3 class="border-bottom pb-2 mb-3">Chef's Specials</h3>
+                <ul class="list-group mb-4 shadow-sm">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Lobster Bisque <span class="badge bg-danger rounded-pill">Hot</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Vegan Risotto <span class="badge bg-success rounded-pill">New</span>
+                    </li>
+                </ul>
+                <figure class="text-center">
+                    <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow-sm" alt="Chef's Special">
+                    <figcaption class="mt-2 text-muted fst-italic">Signature Grilled Salmon</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
