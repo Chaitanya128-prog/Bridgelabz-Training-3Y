@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .input-group { margin-bottom: 15px; }
+        input { padding: 8px; border: 2px solid #ccc; outline: none; }
+        .valid { border-color: green; }
+        .invalid { border-color: red; }
+        .error { color: red; font-size: 12px; display: none; }
+    </style>
+</head>
+<body>
+    <h2>Student Registration</h2>
+    <form id="studentForm">
+        <div class="input-group">
+            <input type="text" id="name" placeholder="Name">
+            <div class="error" id="nameError">Only alphabets allowed.</div>
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" placeholder="Email">
+            <div class="error" id="emailError">Invalid email format.</div>
+        </div>
+        <div class="input-group">
+            <input type="text" id="phone" placeholder="Phone (10 digits)">
+            <div class="error" id="phoneError">Must be exactly 10 digits.</div>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Password">
+            <div class="error" id="passwordError">Needs 1 uppercase, 1 number, 1 special char.</div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="q2_student_form.js"></script>
+</body>
+</html>
