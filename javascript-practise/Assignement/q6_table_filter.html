@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Table Filter</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input { margin-bottom: 15px; padding: 6px; width: 250px; }
+        table { border-collapse: collapse; width: 400px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h2>Student Directory</h2>
+    <input type="text" id="searchInput" placeholder="Search by name, branch, etc...">
+    <table id="studentTable">
+        <thead>
+            <tr><th>Name</th><th>Branch</th><th>CGPA</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Chaitanya</td><td>Cyber Security</td><td>8.5</td></tr>
+            <tr><td>Aman</td><td>Computer Science</td><td>7.9</td></tr>
+            <tr><td>Priya</td><td>Information Tech</td><td>9.1</td></tr>
+            <tr><td>Rohan</td><td>Mechanical</td><td>8.0</td></tr>
+            <tr id="noResults" style="display: none;"><td colspan="3">No results found</td></tr>
+        </tbody>
+    </table>
+    <script src="q6_table_filter.js"></script>
+</body>
+</html>

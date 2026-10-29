@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Dropdown</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-btn { padding: 8px 16px; background: #2563eb; color: white; border: none; cursor: pointer; border-radius: 4px; }
+        .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: white; border: 1px solid #ccc; width: 150px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .dropdown-option { padding: 8px 12px; cursor: pointer; }
+        .dropdown-option:hover { background: #f1f5f9; }
+    </style>
+</head>
+<body>
+    <h2>Custom JS Dropdown (No &lt;select&gt;)</h2>
+    <div class="dropdown" id="customDropdown">
+        <button class="dropdown-btn" id="dropdownBtn">Select Option</button>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <div class="dropdown-option">Option 1</div>
+            <div class="dropdown-option">Option 2</div>
+            <div class="dropdown-option">Option 3</div>
+        </div>
+    </div>
+    <script src="q8_custom_dropdown.js"></script>
+</body>
+</html>

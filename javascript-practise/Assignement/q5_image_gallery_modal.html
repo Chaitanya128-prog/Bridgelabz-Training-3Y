@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery Modal</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; max-width: 600px; }
+        .grid img { width: 100%; height: 120px; object-fit: cover; cursor: pointer; border-radius: 4px; }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; }
+        .modal-box { background: white; padding: 15px; border-radius: 8px; text-align: center; }
+        .modal-box img { max-width: 400px; max-height: 300px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h2>Image Gallery Preview</h2>
+    <div class="grid">
+        <img class="gallery-img" src="https://picsum.photos/id/10/400/300" alt="1">
+        <img class="gallery-img" src="https://picsum.photos/id/20/400/300" alt="2">
+        <img class="gallery-img" src="https://picsum.photos/id/30/400/300" alt="3">
+        <img class="gallery-img" src="https://picsum.photos/id/40/400/300" alt="4">
+        <img class="gallery-img" src="https://picsum.photos/id/50/400/300" alt="5">
+        <img class="gallery-img" src="https://picsum.photos/id/60/400/300" alt="6">
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box" id="modalBox">
+            <img id="modalImg" src="" alt="Preview">
+        </div>
+    </div>
+    <script src="q5_image_gallery_modal.js"></script>
+</body>
+</html>
