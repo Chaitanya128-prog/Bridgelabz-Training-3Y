@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card Fetcher</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f9; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        .card img { max-width: 100px; height: 120px; object-fit: contain; }
+        .price { color: #27ae60; font-weight: bold; margin: 10px 0; }
+        .error { color: red; font-size: 18px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h2>E-Commerce Product Dashboard</h2>
+    <div id="status">Loading products...</div>
+    <div id="productContainer" class="grid"></div>
+
+    <script>
+        async function renderProducts() {
+            const statusDiv = document.getElementById("status");
+            const container = document.getElementById("productContainer");
+
+            try {
+                const res = await fetch("https://fakestoreapi.com/products");
+                if (!res.ok) throw new Error("Network response was not ok");
+                
+                const products = await res.json();
+                statusDiv.style.display = "none";
+
+                products.forEach(product => {
+                    const card = document.createElement("div");
+                    card.className = "card";
+                    card.innerHTML = `
+                        <img src="${product.image}" alt="${product.title}">
+                        <h4>${product.title.substring(0, 30)}...</h4>
+                        <div class="price">$${product.price}</div>
+                    `;
+                    container.appendChild(card);
+                });
+            } catch (err) {
+                statusDiv.className = "error";
+                statusDiv.innerText = "Failed to load products. Please try again.";
+            }
+        }
+        renderProducts();
+    </script>
+</body>
+</html>
